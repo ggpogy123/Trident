@@ -24,6 +24,6 @@ Trident is designed to be a modular, compact interface board. By routing the SPI
 
 ## Key Design Features
 * **Wi-Fi Optimization:** The PCB features a custom edge cut boundary underneath the ESP32 antenna to prevent the FR4 fiberglass from blocking the Wi-Fi signal.
-* **Current Handling:** VCC lines are routed with 0.7mm trace widths to ensure stable power delivery across all three screens and the microcontroller.
-* **Ground Plane:** Utilizes a full copper pour layer to connect all ground points, reducing trace clutter and ensuring a clean signal return path.
-* **Compact Layout:** The ESP32 is strategically mounted on the back of the board, directly behind the display modules, to minimize the overall footprint and reduce PCB material waste.
+* **Current Handling:** VCC lines are routed with 0.7mm trace widths to ensure stable power delivery.
+* **Ground Plane:** Utilizes a full copper pour layer to connect all ground points.
+* **Compact Layout:** The ESP32 is mounted on the back of the board, behind the display modules to minimize the overall footprint and reduce PCB material waste.
