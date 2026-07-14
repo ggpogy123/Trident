@@ -45,7 +45,7 @@ Trident is designed to be a modular, compact interface board. By routing the SPI
 | Screen Number | Chip Select pin | Data/Command pin|
 | :--- | :--- | :--- |
 | **Display 1 (J1)** | GPIO 21 | GPIO 22 |
-| **Display 2 (J2)** | GPIO 12 | GPIO 13 |
+| **Display 2 (J2)** | GPIO 27 | GPIO 13 |
 | **Display 3 (J3)** | GPIO 15 | GPIO 14 |
 
 ### Joystick (J4)
