@@ -26,3 +26,34 @@ Trident is designed to be a modular, compact interface board. By routing the SPI
 * **Wi-Fi Optimization:**  The boundary of the PCB has been cut to ensure that the antenna of the ESP is placed outside the fiberglass. This is done to prevent any kind of interference.
 * **Current Handling:** VCC lines are routed with 0.7mm trace widths.
 * **Ground Plane:** A copper pour layer has been used to connect all GND points.
+
+## Pin layout
+
+### All Displays
+
+| Pin Name | Connection Type | ESP32 pin | Working |
+| :--- | :--- | :--- | :--- |
+| **VCC** | Power | 5V | Power |
+| **GND** | Ground | GND | Ground|
+| **SPI_MOSI**| SPI Data | GPIO 23 | Master Out Slave In |
+| **SPI_SCK** | SPI Clock | GPIO 18 | Serial Clock |
+| **D_RST** | Shared Reset | GPIO 5 | Hardware reset |
+| **LED_BL** | Backlight | GPIO 19 | Backlight |
+
+### Display-Specific Pins
+
+| Screen Number | Chip Select pin | Data/Command pin|
+| :--- | :--- | :--- |
+| **Display 1 (J1)** | GPIO 21 | GPIO 22 |
+| **Display 2 (J2)** | GPIO 12 | GPIO 13 |
+| **Display 3 (J3)** | GPIO 15 | GPIO 14 |
+
+### Joystick (J4)
+
+| Joystick Pin | Connection Type | ESP32 pin | Working |
+| :--- | :--- | :--- | :--- |
+| **VCC** | Power | 5V | Power |
+| **GND** | Ground | GND | Ground |
+| **JOY_X** | Analog Input | GPIO 36 | X-Axis|
+| **JOY_Y** | Analog Input |GPIO 39 | Y-Axis  |
+| **JOY_SW** | Digital Input | GPIO 32 | Click |
